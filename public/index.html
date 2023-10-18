@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <title>Boxing Timer</title>
+    <meta name="description" content="A customizable fitness timer perfect for boxing workouts, both in the gym and at home.">
+</head>
+<body>
+    <section id="clock">
+        <h1 id="remaining-time">03:00</h1>
+        <h2 id="remaining-rounds">Round 1/12</h2>
+        <button id="clock-button1">Start</button>
+        <button id="clock-button2">Reset</button>
+    </section>
+
+    <section id="inputs">
+        <h1>Inputs</h1>
+        <h3>Number of rounds:</h3>
+        <input type="number" id="number-of-rounds-input" value="12" min="0" max="99">
+        <h3>Duration of each round:</h3>
+        <input type="text" id="round-duration-input" value="03:00" pattern="[0-9][0-9]:[0-9][0-9]">
+        <h3>Duration of rest time:</h3>
+        <input type="text" id="rest-duration-input" value="01:00">
+        <h3>Preparation time before timer begins:</h3>
+        <input type="text" id="preparation-time-input" value="00:25">
+        <h3>Round ending warning at:</h3>
+        <input type="text" id="round-end-warning-time-input" value="00:10">
+    </section>
+</body>
+</html>
